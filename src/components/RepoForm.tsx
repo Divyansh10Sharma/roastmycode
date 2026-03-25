@@ -28,7 +28,7 @@ export default function RepoForm() {
   const [fetchLoading, setFetchLoading] = useState(false);
   const [fetchError, setFetchError] = useState<ApiError | null>(null);
   const [fetchResult, setFetchResult] = useState<FetchResult | null>(null);
-  const [pageState, setPageState] = useState<PageState>({ stage: "input" });
+  const [, setPageState] = useState<PageState>({ stage: "input" });
 
   const { state: roastState, roast, reset: resetRoast } = useRoast();
 
