@@ -52,7 +52,7 @@ export function useRoast() {
         accumulated += chunk;
         setState({ status: "loading", partial: accumulated });
       }
-
+ 
       // Parse final JSON
       try {
         // Strip any accidental markdown fences
